@@ -34,6 +34,5 @@ const mocks = [
 ];
 
 const worker = setupWorker(...mocks);
-worker.start();
 
-export { mocks };
+export { mocks, worker };

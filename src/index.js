@@ -5,7 +5,8 @@ import App from "./App";
 
 // need to run msw init ./public
 if (process.env.NODE_ENV === "development") {
-  require("./mocks");
+  const { worker } = require("./mocks");
+  worker.start()
 }
 
 const rootElement = document.getElementById("root");
